@@ -28,14 +28,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:srcCompat="@mipmap/spotlight1"
-            android:id="@+id/imageButton"
+            android:id="@+id/imageButtonRobot"
             android:layout_weight="1" />
 
         <TextView
             android:text="SAL Colloquium “The Robot Next Door” \nFriday, February 24, 2017, 3:40 – 4:40 p.m.\nTower Hall 4119"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"
+            android:id="@+id/textViewRobot"
             android:layout_weight="1" />
     </LinearLayout>
 
@@ -48,26 +48,131 @@
             android:text="Web Info"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1WebInfo"
+            android:id="@+id/btnWebInfoRobot"
             android:layout_weight="1" />
 
         <Button
             android:text="Add to Calendar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1Calendar"
+            android:id="@+id/btnCalendarRobot"
             android:layout_weight="1" />
 
         <Button
             android:text="Map"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button1map"
+            android:id="@+id/btnMapRobot"
             android:layout_weight="1" />
     </LinearLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textViewStatus" />
+        android:id="@+id/textViewStatusRobot" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/choir"
+            android:id="@+id/imageButtonChoir"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="CSS Choirs at Home\nThursday, March 2, 2017, 7:30 - 9:30 p.m.\nMitchell Auditorium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewChoir"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="WEB INFO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnWebInfoChoir"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="ADD TO CALENDAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCalendarChoir"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="MAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMapChoir"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStatusChoir" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@mipmap/theatrehall"
+            android:id="@+id/imageBtnOrestes"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Orestes: Blood and Light \nFriday, March 31, 2017, 7:30-9:30 p.m.\nSt.Scholastica Theatre"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewOrestes"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="WEB INFO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnWebInfoOrestes"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="ADD TO CALENDAR"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnCalendarOrestes"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="MAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnMapOrestes"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStatusOrestes" />
+
 </LinearLayout>

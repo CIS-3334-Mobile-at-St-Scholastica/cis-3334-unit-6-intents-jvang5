@@ -1,6 +1,7 @@
 package css.cis3334.intentsperformances;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.provider.CalendarContract;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -20,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        textViewStatus = (TextView) findViewById(R.id.textViewStatus);
+        textViewStatus = (TextView) findViewById(R.id.textViewStatusRobot);
         setupButtonClickEvents();
 
 
@@ -32,11 +33,17 @@ public class MainActivity extends AppCompatActivity {
         /**
          *   Set up button click event listener for the web info button for the first performance
          */
-        btn1Web = (Button) findViewById(R.id.button1WebInfo);
+        btn1Web = (Button) findViewById(R.id.btnWebInfoRobot);
         btn1Web.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
                 textViewStatus.setText("Code should display website for performance 1");
+
+                Uri webpage = Uri.parse("http://www.css.edu/about/spotlight-arts-and-lectures/calendar.html?trumbaEmbed=eventid%3d122420167%26view%3devent%26-childview%3d");
+                Intent robotWebIntent = new Intent(Intent.ACTION_VIEW, webpage);
+                if (robotWebIntent.resolveActivity(getPackageManager()) != null) {
+                    startActivity(robotWebIntent);
+                }
             }
         });
 
@@ -44,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
          *   Set up button click event listener for the celendar button for the first performance
          *       Use the calendar intent to set an event reminder on the calendar
          */
-        but1Calendar = (Button) findViewById(R.id.button1Calendar);
+        but1Calendar = (Button) findViewById(R.id.btnCalendarRobot);
         but1Calendar.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
@@ -67,11 +74,17 @@ public class MainActivity extends AppCompatActivity {
         /**
          *   Set up button click event listener for the web info button for the first performance
          */
-        btn1Map = (Button) findViewById(R.id.button1map);
+        btn1Map = (Button) findViewById(R.id.btnMapRobot);
         btn1Map.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 // Do something in response to button click
                 textViewStatus.setText("Code should display map for performance 1");
+                Intent mapRobotIntent = new Intent(Intent.ACTION_VIEW);
+                mapRobotIntent.setData("geo:0,0");
+                if (mapRobotIntent.resolveActivity(getPackageManager()) != null)
+                {
+                    startActivity(mapRobotIntent);
+                }
             }
         });
 

@@ -4,6 +4,8 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/IntentsPerformances.iml" filepath="$PROJECT_DIR$/IntentsPerformances.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cis-3334-unit-6-intents-jvang5.iml" filepath="$PROJECT_DIR$/cis-3334-unit-6-intents-jvang5.iml" />
     </modules>
   </component>
 </project>
